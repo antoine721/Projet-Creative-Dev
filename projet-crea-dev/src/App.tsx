@@ -1,19 +1,26 @@
-import "./index.css"
-import './App.css'
+import "./App.css";
+import Home from "./pages/Home";
+import Page1 from "./pages/Page1";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-
   return (
-    <h1 className='app'>
-      <span className='anim title hight white'>Lorem </span>
-      <span className="anim middle">
-        <span className="ml white">ipsum</span> 
-        <span className="mr">dolor</span>
-      </span>
-      <span className="anim title"><span className="index">sit amet.</span></span>
-    </h1>
-  )
+    <div className="app">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/page1" element={<Page1 />} />
+        </Routes>
+      </Router>
+
+      {/* <h1 className="anim title hight white">Lorem </h1>
+      <div className="anim middle">
+        <h1 className="ml white">ipsum</h1>
+        <h1 className="mr">dolor</h1>
+      </div>
+      <h1 className="anim title">sit amet.</h1> */}
+    </div>
+  );
 }
 
-export default App
-
+export default App;
