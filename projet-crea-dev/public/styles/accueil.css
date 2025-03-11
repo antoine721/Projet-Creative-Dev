@@ -1,0 +1,80 @@
+.full{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0E0E0;
+    height: 100vh;
+    width: 100vw;
+  }
+  .title{
+    font-size: 7rem;
+    text-align: center;
+    line-height: 0.7;
+    border-bottom: 2px solid black;
+    width: 100%;
+  }
+  .hight{   
+    border-top: 2px solid black;
+  }
+  .middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 81px;
+  }
+  .ml{
+    font-size: 7rem;
+    text-align: right;
+    line-height: 0.7;
+    border-bottom: 2px solid black;
+    padding-right: 10px;
+    width: 50%;
+  }
+  .mr{
+    font-size: 7rem;
+    text-align: left;
+    line-height: 0.7;
+    padding-left: 10px;
+    border-bottom: 2px solid black;
+    width: 50%;
+  }
+  .white{
+    color: white;
+  }
+  .anim{
+    background-color: transparent;
+    position: relative;
+    z-index: 1  ;
+    overflow: hidden;
+    transition: 1s ease;
+  }
+  .anim:hover{
+    z-index: 2; 
+    color: white;
+    transition: 1s ease;
+  }
+  .anim:hover::before, .anim:hover::after{
+    transform: translateY(0%);
+  
+  }
+  .anim::before, .anim::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+  
+    transform: translateY(100%);
+    transform-origin: 0% 0%;
+    transition: transform 2s ease;
+  
+    inset: 0;
+  
+    background-color: black;
+  }
+  
+  .anim::after {
+    transform: translateY(-100%);
+    transform-origin: 100% 100%;
+  }
