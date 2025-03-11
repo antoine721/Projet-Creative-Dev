@@ -46,7 +46,10 @@
 .anim{
   background-color: orange;
   position: relative;
-
+  z-index: 1  ;
+}
+.anim:hover{
+  z-index: 2;
 }
 .anim:hover::before{
   transform: translateY(0%);
