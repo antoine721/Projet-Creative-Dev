@@ -174,7 +174,7 @@ const Final: React.FC = () => {
       <Link to="/" className="restart-button">
         Home
       </Link>
-      <p>{result.description}</p>
+      <p className="padding">{result.description}</p>
       <div className="result-path">
         <h1>mood</h1>
         <div>
