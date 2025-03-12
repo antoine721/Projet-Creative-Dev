@@ -56,9 +56,13 @@
 .anim {
   background-color: transparent;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   overflow: hidden;
   transition: 1s ease;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .anim:hover {
   z-index: 2;
