@@ -11,7 +11,7 @@ const Home: React.FC = () => {
       <h1 className="mr">SPONTANES</h1>
     </div>
     <Link to="/question1" className="anim title black">
-        Commencer
+        COMMENCER
       </Link>
   </div>
   );
