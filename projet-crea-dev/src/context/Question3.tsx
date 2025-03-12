@@ -19,21 +19,21 @@ const Question3: React.FC = () => {
       <div className="emotions-buttons">
         <button
           onClick={() => handleChoice("joie")}
-          className="emotion-button joie"
+          className="emotion-button joie joy"
         >
           <span className="emotion-emoji">😄</span>
           <span className="emotion-label">Joie</span>
         </button>
         <button
           onClick={() => handleChoice("tristesse")}
-          className="emotion-button tristesse"
+          className="emotion-button tristesse sadness"
         >
           <span className="emotion-emoji">😢</span>
           <span className="emotion-label">Tristesse</span>
         </button>
         <button
           onClick={() => handleChoice("amour")}
-          className="emotion-button amour"
+          className="emotion-button amour love"
         >
           <span className="emotion-emoji">❤️</span>
           <span className="emotion-label">Amour</span>
