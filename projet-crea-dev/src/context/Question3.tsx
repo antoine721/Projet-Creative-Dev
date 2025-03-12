@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useEmotion } from "./EmotionContext";
+import "../../public/styles/pages.css";
 
 import { Emotion } from "../types";
 

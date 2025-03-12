@@ -23,14 +23,18 @@
 .joy{
     background-color: yellow;
 }
+.joy:hover{
+    animation: joy 1.3s infinite;
+}
 .sadness{
     background-color: blue;
 }
+.sadness:hover{
+    height: 550px;
+    transition: 1s;
+}
 .anger{
     background-color: red;
-}
-.anger:hover{
-    animation: anger 0.7s, stress 1.5s infinite 0.7s;
 }
 .love{
     background-color: pink;
@@ -70,16 +74,7 @@
     }
 }
 
-@keyframes anger {
-    80% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes stress{
+@keyframes joy{
     5%{
         transform: rotate(5deg);
     }

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .full {
   position: relative;
   display: flex;
@@ -14,6 +19,7 @@
   line-height: 0.7;
   border-bottom: 2px solid black;
   width: 100%;
+  height: 80px;
 }
 .hight {
   border-top: 2px solid black;
@@ -44,6 +50,9 @@
 .white {
   color: white;
 }
+.black {
+  color: black;
+} 
 .anim {
   background-color: transparent;
   position: relative;

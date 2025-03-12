@@ -2,6 +2,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useEmotion } from "../context/EmotionContext";
+import "../../public/styles/pages.css";
 
 import { Emotion } from "../types";
 
